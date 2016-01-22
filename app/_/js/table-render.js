@@ -39,7 +39,9 @@
         }
 
         $('#table').find('tbody').empty().append(html);
-        drawPagination(this.data.length, this.options.rows, start);
+        if(this.options.pagination){
+            drawPagination(this.data.length, this.options.rows, start);
+        }
     };
 
     Table.prototype.goToPage = function(id){

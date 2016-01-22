@@ -103,6 +103,7 @@
   }
 
   table{
+    margin-bottom: 20px;
     width: 100%;
 
     thead{
@@ -135,7 +136,7 @@
 
   .pagination{
     display: block;
-    margin: 20px 0 0;
+    margin: 0;
     text-align: center;
     word-wrap: break-word;
 
@@ -316,7 +317,7 @@ footer{
   }
 
   .table{
-    padding: 0;
+    padding: 0 0 90px 0;
 
     .section-head{
       margin: 0 15px 75px;
@@ -346,6 +347,7 @@ footer{
     }
 
     table{
+        margin-bottom: 31px;
       thead{
         tr{
           th{
@@ -369,7 +371,7 @@ footer{
     }
 
     .pagination{
-      margin: 31px 45px 85px;
+      margin: 0 45px;
 
       a{
         padding: 0 5px 5px;
