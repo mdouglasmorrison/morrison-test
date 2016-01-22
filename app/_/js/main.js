@@ -26,12 +26,14 @@ var jobs = (function () {
 
         $body.on('click', '.refresh' ,function(){
             $('.search').find('input').val('');
+            table.clearSorting();
             getData();
         });
 
         $('.search').find('input').keyup( _.debounce(function(){
             var query = $(this).val();
             getData(query);
+            table.clearSorting();
         }, 500));
 
 

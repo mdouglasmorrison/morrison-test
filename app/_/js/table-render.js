@@ -66,6 +66,11 @@
         this.goToPage(1);
     };
 
+    Table.prototype.clearSorting = function(){
+        $('.table-sort').each(function(){
+            $(this).removeClass('ascending').removeClass('descending');
+        })
+    };
 
     function drawPagination(length, rows, start){
         var pageCount = Math.ceil(length/rows),
