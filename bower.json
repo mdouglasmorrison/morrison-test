@@ -1,0 +1,11 @@
+{
+  "name": "morrison-test",
+  "version": "0.1.0",
+  "dependencies": {
+    "html5-boilerplate": "~4.2.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "lodash": "~4.0.0",
+  },
+  "devDependencies": {}
+}

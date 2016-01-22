@@ -1,0 +1,71 @@
+@import 'variables';
+
+/* ----Highlight A Piece of Text---- */
+.highlight{
+  background-color: $red;
+  padding: 0 4px 3px;
+}
+
+
+
+/* ----Buttons---- */
+.button{
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 27px;
+  transition: background-color 0.5s ease;
+}
+
+.button.button-primary{
+  background-color: $red;
+  color: #fff;
+}
+
+.button.button-primary:hover{
+  background-color: darken($red, 25%);
+  color: #fff;
+}
+
+
+
+
+/* ----Inputs---- */
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $search-border;
+  color: $placeholder-text;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+}
+
+input:active, input:focus, input:target {
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: $placeholder-text;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholder-text;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholder-text;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: $placeholder-text;
+}
+
+::-ms-input-placeholder { /* Edge */
+  color: $placeholder-text;
+}
+
+:placeholder-shown { /* Standard one last! */
+  color: $placeholder-text;
+}

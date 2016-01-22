@@ -1,0 +1,92 @@
+/* ----HERO ICONS---- */
+.icon-hero{
+  background-image: url(../images/icons/hero-icon-sprite.png);
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  width: 32px;
+}
+
+.icon-sunset{
+  background-position-y: 92px;
+}
+
+.icon-star{
+  background-position-y: 58px;
+}
+
+.icon-card{
+  background-position-y: 26px;
+  height: 26px;
+}
+
+.icon-graph{
+  background-position-y: 0;
+}
+
+
+
+
+/* ----Table Interaction Icons---- */
+.icon-interaction{
+  background: url(../images/icons/interaction-sprite.png) no-repeat;
+  position: absolute;
+}
+
+.icon-search{
+  background-position: 0 4px;
+  height: 20px;
+  right: -14px;
+  top: 7px;
+  width: 20px;
+}
+
+.icon-refresh{
+  background-position: 0 -15px;
+  cursor: pointer;
+  height: 17px;
+  left: 25px;
+  top: 9px;
+  width: 16px;
+}
+
+th{
+  span{
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+    width: 20px;
+  }
+}
+
+th.ascending{
+  span{
+    background: url(../images/icons/interaction-sprite.png) no-repeat 0 -103px;
+  }
+}
+
+th.descending{
+  span{
+    background: url(../images/icons/interaction-sprite.png) no-repeat 0 -192px;
+  }
+}
+
+
+
+
+/* ----Social Icons---- */
+.social-icons{
+  .icon-social{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+  }
+  .icon-facebook{
+    background: url(../images/icons/social-sprite.png) no-repeat 0 0;
+  }
+  .icon-twitter{
+    background: url(../images/icons/social-sprite.png) no-repeat 0px -18px;
+  }
+}
+
+
