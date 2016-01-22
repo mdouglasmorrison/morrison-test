@@ -1,7 +1,5 @@
 (function() {
-    // Define our constructor
     this.Table = function(args) {
-        // Define option defaults
         var defaults = {
             pagination: true,
             rows: 10
@@ -16,21 +14,18 @@
 
     Table.prototype.render = function(start){
         var i,
+            rows,
             html = '',
             startIndex = (start - 1) * this.options.rows;
 
         if((this.data.length - startIndex) < this.options.rows){
-            for(i = 0; i < (this.data.length - startIndex); i++){
-                html += '<tr>' +
-                    '<td>' + this.data[i + startIndex].title + '</td>' +
-                    '<td>' + this.data[i + startIndex].company + '</td>' +
-                    '<td>' + this.data[i + startIndex].code +' </td>' +
-                    '<td>' + this.data[i + startIndex].created + '</td>' +
-                    '<td>11:11 am</td>' +
-                    '</tr>'
-            }
-        }else if(this.data.length){
-            for(i = 0; i < this.options.rows; i++){
+            rows = this.data.length - startIndex;
+        }else{
+            rows = this.options.rows;
+        }
+
+        if(this.data.length){
+            for(i = 0; i < rows; i++){
                 html += '<tr>' +
                     '<td>' + this.data[i + startIndex].title + '</td>' +
                     '<td>' + this.data[i + startIndex].company + '</td>' +

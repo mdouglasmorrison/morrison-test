@@ -116,7 +116,6 @@
             </div>
         </div>
     </footer>
-
     <?php require('_/inc/tail.php'); ?>
 </body>
 </html>

@@ -1,4 +1,3 @@
-// Global module
 var jobs = (function () {
     var table = new Table({
         rows: 8
@@ -33,11 +32,11 @@ var jobs = (function () {
         $('.search').find('input').keyup( _.debounce(function(){
             var query = $(this).val();
             getData(query);
-        }, 500)); // This is the line you want!
+        }, 500));
 
 
         $body.on('click', '.page' ,function(){
-            var id = $(this).attr('id');
+           var id = $(this).attr('id');
            table.goToPage(id);
         });
     }
