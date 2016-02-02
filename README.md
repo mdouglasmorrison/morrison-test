@@ -1,4 +1,5 @@
-# Morrison Test
+# Layout with Typeahead Search
+An example of using HTML, CSS, JS, JQuery & PHP to display a brochure page, including a data grid with typeahead search.
 
 ##Setup Guide
 ######This guide assumes you have Node.js installed on your machine.
